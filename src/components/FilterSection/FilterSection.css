@@ -1,0 +1,63 @@
+.filter__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 0px;
+}
+
+.filter__section__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__section__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter__section__title{
+    font-weight: 600;
+}
+
+.arrow-down{
+    background-color: #fff;
+    border: none;
+    height: 10px;
+}
+.filter__options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.filter__item input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn--unselect {
+    background-color: white;
+    border: none;
+    color: #b0b0b0;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+label span {
+    font-size: 14px;
+}

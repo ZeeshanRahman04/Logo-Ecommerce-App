@@ -1,0 +1,62 @@
+.filters__header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: gainsboro;
+    background-color: #fff;
+}
+
+.filters__header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SECTION */
+.filters__left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.items-count {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* BUTTON (looks like text link in Figma) */
+.filters--btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters--btn svg {
+    stroke-width: 2;
+}
+
+.filters--btn:hover {
+    color: black;
+}
+
+/* RIGHT SECTION */
+.filter__options select {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+}

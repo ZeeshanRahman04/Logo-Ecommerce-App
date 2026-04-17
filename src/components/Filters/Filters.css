@@ -1,0 +1,24 @@
+/* Filters.css */
+
+/* Main container for the filters */
+.filters {
+  width: 250px;
+  background-color: transparent;
+  padding: 10px 0px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+/* Customizable filter */
+.filter-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid gainsboro;
+  gap: 10px;
+}
+
+.filter-item label {
+    font-weight: 600;
+}

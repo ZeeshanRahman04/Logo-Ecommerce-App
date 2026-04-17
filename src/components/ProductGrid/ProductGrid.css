@@ -1,0 +1,28 @@
+.products__grid__container {
+    display: grid;
+    /* 4 columns like Figma */
+    gap: 32px;
+    /* spacing between cards */
+    padding: 24px 32px;
+}
+
+.with__filters {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.full__width {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .products__grid__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products__grid__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,15 @@
+.product__listing__page {
+  padding: 0px 70px;
+}
+
+.product__listing__container--full {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.product__listing__container--with--filters {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
