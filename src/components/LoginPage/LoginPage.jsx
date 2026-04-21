@@ -53,13 +53,13 @@ function LoginPage() {
           <input
             type="text"
             id="sign-in"
-            placeholder="Username"
+            placeholder="rahul"
             onChange={(e) => setUsername(e.target.value)}
           />
           <input
             type="password"
             id="password"
-            placeholder="Password"
+            placeholder="rahul@2021"
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
