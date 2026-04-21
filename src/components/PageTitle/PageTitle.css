@@ -1,8 +1,29 @@
 .page__title {
+    background-color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 50px 10px;
+    gap: 20px;
 }
-.page__title img {
-    height: 120px;
+
+.page__title h1 {
+    font-weight: 300;
+    font-size: 35px;
+}
+.page__title p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.page__title__description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.page__title__description p:nth-of-type(2){
+    text-align: center;
 }

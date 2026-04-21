@@ -1,5 +1,6 @@
 
 .header {
+    background-color: #fff;
     font-family: 'Inter';
     width: 100%;
     border-bottom: 1px solid #E5E5E5;
@@ -85,4 +86,14 @@
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.btn--signout {
+    background: none;
+    border: none;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+
 }

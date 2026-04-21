@@ -3,7 +3,12 @@ import "./FiltersHeader.css";
 import { BsChevronLeft } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
 
-function FiltersHeader({ productsLength, toggleFilters, showFilters }) {
+function FiltersHeader({
+  productsLength,
+  toggleFilters,
+  showFilters,
+  onChangeSortProducts,
+}) {
   return (
     <div className="filters__header">
       <div className="filters__header__container">
@@ -28,12 +33,10 @@ function FiltersHeader({ productsLength, toggleFilters, showFilters }) {
 
         {/* RIGHT */}
         <div className="filter__options">
-          <select>
-            <option>RECOMMENDED</option>
-            <option>NEWEST FIRST</option>
-            <option>POPULAR</option>
-            <option>PRICE: HIGH TO LOW</option>
-            <option>PRICE: LOW TO HIGH</option>
+          <select onChange={(e) => onChangeSortProducts(e.target.value)}>
+            <option value="popular">POPULAR</option>
+            <option value="price-high">PRICE: HIGH TO LOW</option>
+            <option value="price-low">PRICE: LOW TO HIGH</option>
           </select>
         </div>
       </div>

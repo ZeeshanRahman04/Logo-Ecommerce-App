@@ -1,45 +1,31 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import "./PLP.css";
 
 import FiltersHeader from "../FiltersHeader/FiltersHeader.jsx";
 import Filters from "../Filters/Filters.jsx";
 import Products from "../Products/Products.jsx";
+import { ProductContext } from "../../context/ProductContext.jsx";
 
 function PLP() {
   const [showFilters, setShowFilters] = useState(false);
-  const [products, setProducts] = useState([]);
-
+  const { products, setProducts } = useContext(ProductContext);
+  console.log(...products);
   function onClickToggleFilters() {
     setShowFilters((prev) => !prev);
   }
 
-  useEffect(() => {
-    const getProducts = async () => {
-      const apiUrl = "https://fakestoreapi.com/products";
-      const options = {
-        method: "GET",
-      };
-
-      const response = await fetch(apiUrl, options);
-      if (response.ok === true) {
-        const fetchedData = await response.json();
-        const formattedData = fetchedData.map((item) => ({
-          id: item.id,
-          title: item.title,
-          price: item.price,
-          image: item.image,
-          category: item.category,
-          rating: item.rating.rate,
-          count: item.rating.count,
-        }));
-        setProducts(formattedData);
-      } else {
-        throw new Error("Failed to fetch products");
-      }
-    };
-    getProducts();
-  }, []);
+  const onChangeSortProducts = (option) => {
+    const filteredProducts = [...products];
+    if (option === "popular") {
+      filteredProducts.sort((a, b) => b.rating - a.rating);
+    } else if (option === "price-high") {
+      filteredProducts.sort((a, b) => b.price - a.price);
+    } else {
+      filteredProducts.sort((a, b) => a.price - b.price);
+    }
+    setProducts([...filteredProducts]);
+  };
 
   return (
     <div className="product__listing__page">
@@ -47,6 +33,7 @@ function PLP() {
         productsLength={products.length}
         toggleFilters={onClickToggleFilters}
         showFilters={showFilters}
+        onChangeSortProducts={onChangeSortProducts}
       />
       <div
         className={`product__listing__container ${

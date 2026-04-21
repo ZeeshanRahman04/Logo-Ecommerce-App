@@ -1,0 +1,13 @@
+.empty__cart{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.empty__cart h1 {
+    font-size: 50px;
+    color: rgb(123, 122, 122);
+}

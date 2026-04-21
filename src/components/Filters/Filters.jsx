@@ -8,32 +8,17 @@ const options = [
     category: ["Men", "Women", "Boys", "Girls"],
   },
   {
-    title: "OCCASION",
-    category: ["Casual", "Formal", "Party", "Wedding", "Sports"],
+    title: "CATEGORY",
+    category: [
+      "Men's Clothing",
+      "Women's Clothing",
+      "Jewellery",
+      "Electronics",
+    ],
   },
   {
-    title: "WORK",
-    category: ["Office Wear", "Daily Wear", "Travel", "Home"],
-  },
-  {
-    title: "FABRIC",
-    category: ["Cotton", "Polyester", "Wool", "Silk", "Denim"],
-  },
-  {
-    title: "SEGMENT",
-    category: ["Premium", "Luxury", "Budget", "Mid-Range"],
-  },
-  {
-    title: "SUITABLE FOR",
-    category: ["Summer", "Winter", "All Season"],
-  },
-  {
-    title: "RAW MATERIALS",
-    category: ["Organic", "Synthetic", "Blended"],
-  },
-  {
-    title: "PATTERN",
-    category: ["Solid", "Printed", "Striped", "Checked"],
+    title: "RATING",
+    category: ["4⭐️ & above", "3⭐️ & above", "2⭐️ & above"],
   },
 ];
 
